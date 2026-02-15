@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>ScienceNotion Updates</title>
+    <description>ScienceNotion Editorial + News updates</description>
+    <link>https://example.com/</link>
+    <item>
+      <title>Transformer 页面更新</title>
+      <link>https://example.com/pages/concept-transformer.html</link>
+      <pubDate>Sun, 15 Feb 2026 08:00:00 GMT</pubDate>
+      <description>新增误区与前置概念部分。</description>
+    </item>
+    <item>
+      <title>科研动态周报 2026-02-15</title>
+      <link>https://example.com/pages/news-weekly-2026-02-15.html</link>
+      <pubDate>Sun, 15 Feb 2026 09:00:00 GMT</pubDate>
+      <description>本周 3 条科研更新。</description>
+    </item>
+  </channel>
+</rss>

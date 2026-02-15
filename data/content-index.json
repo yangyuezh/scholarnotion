@@ -1,0 +1,28 @@
+{
+  "editorial": [
+    {
+      "slug": "transformer",
+      "title": "Transformer",
+      "topic": "machine-learning",
+      "updated_at": "2026-02-15",
+      "url": "/pages/concept-transformer.html"
+    }
+  ],
+  "news": [
+    {
+      "slug": "weekly-2026-02-15",
+      "title": "科研动态周报 (2026-02-15)",
+      "published_at": "2026-02-15",
+      "url": "/pages/news-weekly-2026-02-15.html"
+    }
+  ],
+  "wiki": [
+    {
+      "slug": "bayes-theorem",
+      "title": "Bayes Theorem",
+      "status": "approved",
+      "version": "v1.2",
+      "url": "/pages/wiki-bayes-theorem.html"
+    }
+  ]
+}
