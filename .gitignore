@@ -1,0 +1,7 @@
+# Aggregation outputs
+data/aggregator/archive.jsonl
+data/aggregator/latest_batch.json
+content/insight_drafts/*
+!content/insight_drafts/.gitkeep
+content/insight_issues/*
+!content/insight_issues/.gitkeep
