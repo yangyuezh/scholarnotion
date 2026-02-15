@@ -45,3 +45,16 @@ Runbook:
 Source configuration:
 
 - `/Users/jasper/Documents/codex/scholarnotion/data/open_sources.json`
+
+## Hourly automation
+
+GitHub Actions runs hourly via:
+
+- `/Users/jasper/Documents/codex/scholarnotion/.github/workflows/hourly-growth.yml`
+
+The job performs:
+
+- open-source feed aggregation and dedupe
+- internal link check
+- sitemap regeneration
+- SEO health report generation

@@ -1,0 +1,41 @@
+name: Hourly Growth Ops
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+jobs:
+  growth_ops:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Aggregate open-source feeds
+        run: python3 scripts/aggregate_open_sources.py --max-per-source 3
+
+      - name: Check internal links
+        run: python3 scripts/check_internal_links.py
+
+      - name: Regenerate sitemap
+        run: python3 scripts/generate_sitemap.py --domain https://scholarnotion.com
+
+      - name: Run SEO health checks
+        run: python3 scripts/seo_health_check.py --domain https://scholarnotion.com --output reports/seo-health.json
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: hourly-growth-artifacts
+          path: |
+            reports/seo-health.json
+            data/aggregator/latest_batch.json
+            sitemap.xml
