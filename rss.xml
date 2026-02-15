@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
-    <title>ScienceNotion Updates</title>
-    <description>ScienceNotion Editorial + News updates</description>
+    <title>ScholarNotion Updates</title>
+    <description>ScholarNotion charts and insights updates</description>
     <link>https://scholarnotion.com/</link>
     <item>
-      <title>Transformer 页面更新</title>
+      <title>Transformer page updated</title>
       <link>https://scholarnotion.com/pages/concept-transformer.html</link>
       <pubDate>Sun, 15 Feb 2026 08:00:00 GMT</pubDate>
-      <description>新增误区与前置概念部分。</description>
+      <description>Added common pitfalls and prerequisite notes.</description>
     </item>
     <item>
-      <title>科研动态周报 2026-02-15</title>
+      <title>Research Weekly 2026-02-15</title>
       <link>https://scholarnotion.com/pages/news-weekly-2026-02-15.html</link>
       <pubDate>Sun, 15 Feb 2026 09:00:00 GMT</pubDate>
-      <description>本周 3 条科研更新。</description>
+      <description>Three curated updates with source placeholders.</description>
     </item>
   </channel>
 </rss>
