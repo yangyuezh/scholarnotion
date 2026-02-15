@@ -3,92 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ScienceNotion | 可信的科学概念库</title>
+    <title>ScholarNotion | Data & Concepts for Science</title>
     <meta
       name="description"
-      content="ScienceNotion: 主发布内容 + 科研新闻 + Wiki 共建，帮助用户系统理解科学概念。"
+      content="ScholarNotion: 借鉴 OWID 的主题化数据叙事，提供 Topics、Charts、Insights、Explorer 与 Methodology。"
     />
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav">
-        <a class="brand" href="/">ScienceNotion</a>
+        <a class="brand" href="/">ScholarNotion</a>
         <nav class="menu">
-          <a href="/pages/explore.html">Explore</a>
-          <a href="/pages/news.html">News</a>
-          <a href="/pages/wiki.html">Wiki</a>
-          <a href="/pages/paths.html">Paths</a>
           <a href="/pages/topics.html">Topics</a>
-          <a href="/pages/about.html">About</a>
+          <a href="/pages/charts.html">Charts</a>
+          <a href="/pages/insights.html">Insights</a>
+          <a href="/pages/explorer.html">Explorer</a>
+          <a href="/pages/methodology.html">Methodology</a>
         </nav>
-        <a class="search-chip" href="/pages/explore.html">Search Concepts</a>
+        <a class="search-chip" href="/pages/charts.html">Search Data</a>
       </div>
     </header>
 
     <main class="container">
       <section class="hero">
-        <h1>把科学概念讲清楚，并给到可验证的参考。</h1>
+        <h1>科学知识不止是观点，也应该是可追溯的数据证据。</h1>
         <p>
-          这是 ScienceNotion Cloudflare 首发版，采用“三层内容架构”：主发布内容保证权威质量，News
-          负责时效更新，Wiki 让社区共建并通过审核流进入公开版本。
+          ScholarNotion 借鉴 OWID 的结构化叙事方式：用主题、图表和方法说明，把“结论是什么”与“证据从哪里来”放在同一页面。
         </p>
+        <div class="strip">
+          <article class="strip-item">
+            <strong>28</strong>
+            <span>已上线数据图表</span>
+          </article>
+          <article class="strip-item">
+            <strong>6</strong>
+            <span>重点主题专题</span>
+          </article>
+          <article class="strip-item">
+            <strong>12</strong>
+            <span>本月洞察更新</span>
+          </article>
+          <article class="strip-item">
+            <strong>100%</strong>
+            <span>图表附数据来源与口径</span>
+          </article>
+        </div>
       </section>
 
       <section class="section">
-        <h2>学习路径</h2>
+        <div class="section-head">
+          <h2>Featured Charts</h2>
+          <a href="/pages/charts.html">View all charts →</a>
+        </div>
         <div class="grid cards-3">
-          <a class="card" href="/pages/path-transformer-foundations.html">
-            <span class="pill">Path</span>
-            <h3>Transformer Foundations</h3>
-            <p>10 个核心概念，从 Attention 到 Scaling Laws。</p>
+          <a class="card" href="/pages/chart-ai-publications.html">
+            <span class="pill">AI Research</span>
+            <h3>Global AI publication trend</h3>
+            <p>展示 2018-2025 的 AI 论文产出变化，并对比主要国家。</p>
           </a>
-          <a class="card" href="/pages/topics.html">
-            <span class="pill">Path</span>
-            <h3>统计推断入门</h3>
-            <p>从随机变量、估计、置信区间到假设检验。</p>
+          <a class="card" href="/pages/chart-ai-publications.html">
+            <span class="pill">Education</span>
+            <h3>STEM graduate pipeline</h3>
+            <p>按阶段拆分 STEM 人才供给，观察学位结构变化。</p>
           </a>
-          <a class="card" href="/pages/topics.html">
-            <span class="pill">Path</span>
-            <h3>生物信息学速通</h3>
-            <p>基因表达、测序、差异分析与可重复性。</p>
-          </a>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>本周更新</h2>
-        <div class="grid cards-2">
-          <a class="card" href="/pages/concept-transformer.html">
-            <span class="pill">Editorial</span>
-            <h3>Concept: Transformer</h3>
-            <p>新增 Pitfalls 与 Prerequisites，补充 7 条来源。</p>
-          </a>
-          <a class="card" href="/pages/news-weekly-2026-02-15.html">
-            <span class="pill">News</span>
-            <h3>科研动态周报 (2026-02-15)</h3>
-            <p>3 条进展摘要，均附来源、日期和原文链接。</p>
+          <a class="card" href="/pages/chart-ai-publications.html">
+            <span class="pill">Health</span>
+            <h3>Clinical trial participation</h3>
+            <p>聚焦地区差异、样本覆盖率和年增速。</p>
           </a>
         </div>
       </section>
 
-      <section class="section">
-        <h2>Wiki 共建状态</h2>
+      <section class="section keyline">
+        <div class="section-head">
+          <h2>Topics</h2>
+          <a href="/pages/topics.html">Browse topics →</a>
+        </div>
+        <div class="grid cards-3">
+          <a class="card" href="/pages/topics.html">
+            <span class="pill">Research</span>
+            <h3>AI and scientific productivity</h3>
+            <p>研究产出、引用质量与协作网络的长期变化。</p>
+          </a>
+          <a class="card" href="/pages/topics.html">
+            <span class="pill">Education</span>
+            <h3>Higher education outcomes</h3>
+            <p>学位完成率、学科分布、国际流动数据汇总。</p>
+          </a>
+          <a class="card" href="/pages/topics.html">
+            <span class="pill">Climate</span>
+            <h3>Climate and adaptation</h3>
+            <p>观测数据、极端事件与适应性投入趋势。</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section keyline">
+        <div class="section-head">
+          <h2>Latest Insights</h2>
+          <a href="/pages/insights.html">Read all insights →</a>
+        </div>
+        <div class="insight-list">
+          <a class="insight-row" href="/pages/insights.html">
+            <div class="insight-date">2026-02-15</div>
+            <div>
+              <h3 class="insight-title">AI publication growth slowed, but citation concentration rose</h3>
+              <p class="insight-text">基于三套公开数据库，比较总量增速与高被引论文占比。</p>
+            </div>
+          </a>
+          <a class="insight-row" href="/pages/insights.html">
+            <div class="insight-date">2026-02-12</div>
+            <div>
+              <h3 class="insight-title">STEM graduate expansion is uneven across regions</h3>
+              <p class="insight-text">同样扩招背景下，不同地区的完成率出现明显分化。</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section keyline">
+        <div class="section-head">
+          <h2>Build Trust With Methodology</h2>
+          <a href="/pages/methodology.html">Open methodology →</a>
+        </div>
         <div class="card">
           <p>
-            当前策略：社区提交默认进入
-            <code>pending</code>，审核通过后显示为公开版本。你可以查看示例词条与审核规则。
+            每个图表页面都提供统一方法区块：数据源、口径定义、更新频率、已知局限与下载入口。任何观点必须可复算、可验证。
           </p>
           <p style="margin-top: 12px">
-            <a class="button" href="/pages/wiki.html">查看 Wiki</a>
-            <a class="button secondary" href="/pages/about.html">查看审核流</a>
+            <a class="button" href="/pages/chart-ai-publications.html">Open chart template</a>
+            <a class="button secondary" href="/pages/explorer.html">Try explorer</a>
           </p>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container">ScienceNotion v1 · Built for Cloudflare Pages</div>
+      <div class="container">ScholarNotion · OWID-lite release on Cloudflare</div>
     </footer>
   </body>
 </html>

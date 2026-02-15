@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorer | ScholarNotion</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/">ScholarNotion</a>
+        <nav class="menu">
+          <a href="/pages/topics.html">Topics</a>
+          <a href="/pages/charts.html">Charts</a>
+          <a href="/pages/insights.html">Insights</a>
+          <a href="/pages/explorer.html">Explorer</a>
+          <a href="/pages/methodology.html">Methodology</a>
+        </nav>
+        <a class="search-chip" href="/pages/charts.html">Search Data</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="page-title">
+        <h1>Data Explorer</h1>
+        <p>最小可交互版本：指标切换 + 年份滑杆 + 国家对比。</p>
+      </section>
+
+      <section class="section">
+        <div class="card">
+          <div class="controls">
+            <label>
+              Indicator
+              <select id="indicator">
+                <option value="papers">AI papers (index)</option>
+                <option value="citations">Top-cited share (%)</option>
+                <option value="graduates">STEM graduates (per million)</option>
+              </select>
+            </label>
+            <label>
+              Year
+              <input id="year" type="range" min="2020" max="2025" step="1" value="2025" />
+            </label>
+            <span class="search-chip" id="yearText">2025</span>
+          </div>
+          <div class="chart-bar" id="bars"></div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const data = {
+        papers: {
+          2020: { China: 64, US: 58, EU: 49, India: 33 },
+          2021: { China: 70, US: 62, EU: 52, India: 39 },
+          2022: { China: 77, US: 66, EU: 55, India: 44 },
+          2023: { China: 84, US: 69, EU: 58, India: 48 },
+          2024: { China: 90, US: 71, EU: 60, India: 51 },
+          2025: { China: 93, US: 73, EU: 61, India: 54 }
+        },
+        citations: {
+          2020: { China: 16, US: 21, EU: 18, India: 8 },
+          2021: { China: 17, US: 22, EU: 19, India: 8.8 },
+          2022: { China: 18.5, US: 22.7, EU: 19.4, India: 9.2 },
+          2023: { China: 19.7, US: 23.9, EU: 20.1, India: 10.1 },
+          2024: { China: 21.2, US: 24.4, EU: 20.9, India: 10.9 },
+          2025: { China: 22.1, US: 25.1, EU: 21.4, India: 11.4 }
+        },
+        graduates: {
+          2020: { China: 1280, US: 760, EU: 820, India: 530 },
+          2021: { China: 1335, US: 772, EU: 838, India: 560 },
+          2022: { China: 1380, US: 785, EU: 851, India: 590 },
+          2023: { China: 1428, US: 799, EU: 867, India: 620 },
+          2024: { China: 1470, US: 812, EU: 878, India: 640 },
+          2025: { China: 1508, US: 825, EU: 890, India: 665 }
+        }
+      };
+
+      const yearEl = document.getElementById("year");
+      const yearText = document.getElementById("yearText");
+      const indicatorEl = document.getElementById("indicator");
+      const bars = document.getElementById("bars");
+
+      function render() {
+        const year = yearEl.value;
+        const indicator = indicatorEl.value;
+        const rows = data[indicator][year];
+        const max = Math.max(...Object.values(rows));
+        yearText.textContent = year;
+        bars.innerHTML = Object.entries(rows)
+          .map(([name, value]) => {
+            const width = Math.max(8, (value / max) * 100);
+            return `
+              <div class="bar-row">
+                <strong>${name}</strong>
+                <div class="bar-fill" style="width:${width}%"></div>
+                <span>${value}</span>
+              </div>
+            `;
+          })
+          .join("");
+      }
+
+      yearEl.addEventListener("input", render);
+      indicatorEl.addEventListener("change", render);
+      render();
+    </script>
+  </body>
+</html>

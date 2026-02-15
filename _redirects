@@ -1,6 +1,10 @@
 /explore /pages/explore.html 200
-/news /pages/news.html 200
+/news /pages/insights.html 200
+/insights /pages/insights.html 200
+/charts /pages/charts.html 200
+/explorer /pages/explorer.html 200
+/methodology /pages/methodology.html 200
 /wiki /pages/wiki.html 200
 /paths /pages/paths.html 200
 /topics /pages/topics.html 200
-/about /pages/about.html 200
+/about /pages/methodology.html 200
