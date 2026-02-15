@@ -45,7 +45,7 @@ python3 -m http.server 4173
 ## 绑定你的域名
 
 1. 在 Cloudflare Pages 项目中进入 `Custom domains`。
-2. 添加你的主域名（例如 `sciencenotion.com`）和 `www` 子域。
+2. 添加你的主域名（例如 `scholarnotion.com`）和 `www` 子域。
 3. 按提示创建/确认 DNS 记录（如果域名已托管到 Cloudflare，通常自动完成）。
 4. 等待 SSL 证书签发，状态变为 Active 后即可访问。
 
