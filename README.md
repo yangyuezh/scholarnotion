@@ -40,6 +40,8 @@ python3 -m http.server 4173
 - `Build output directory`: `/`（仓库根目录）
 4. 点击 `Save and Deploy`。
 
+无 Token 自动部署方案见：`/Users/jasper/Documents/codex/sciencenotion/DEPLOY_NO_TOKEN.md`
+
 ## 绑定你的域名
 
 1. 在 Cloudflare Pages 项目中进入 `Custom domains`。
@@ -58,3 +60,10 @@ python3 -m http.server 4173
 1. 把静态 HTML 迁移为 Next.js + MDX（便于模板化和搜索）。
 2. 引入数据库实现 Wiki 审核流（`draft/pending/approved/rejected/archived`）。
 3. 增加全文检索与订阅系统（邮件 + RSS 自动发布）。
+
+## 日常发布命令
+
+```bash
+cd /Users/jasper/Documents/codex/sciencenotion
+./scripts/release.sh https://你的域名 "feat: 更新内容" v0.1.1
+```
