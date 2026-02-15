@@ -5,7 +5,7 @@
 ## 一次性设置（你在 Cloudflare 控制台点一次）
 
 1. Cloudflare -> `Workers & Pages` -> `Create` -> `Pages` -> `Connect to Git`
-2. 选择仓库：`yangyuezh/sciencenotion`
+2. 选择仓库：`yangyuezh/scholarnotion`
 3. 配置：
 - Framework preset: `None`
 - Build command: 留空
@@ -18,7 +18,7 @@
 ## 日常发布（我来执行）
 
 ```bash
-cd /Users/jasper/Documents/codex/sciencenotion
+cd /Users/jasper/Documents/codex/scholarnotion
 ./scripts/release.sh https://你的域名 "feat: 本次改动说明" v0.1.1
 ```
 

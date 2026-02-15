@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--domain", required=True, help="example: https://sciencenotion.com")
+    parser.add_argument("--domain", required=True, help="example: https://scholarnotion.com")
     args = parser.parse_args()
 
     domain = args.domain.rstrip("/")

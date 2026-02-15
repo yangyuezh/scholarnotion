@@ -3,7 +3,7 @@ set -euo pipefail
 
 if [[ $# -lt 2 ]]; then
   echo "Usage: ./scripts/release.sh <domain> <commit-message> [tag]"
-  echo "Example: ./scripts/release.sh https://sciencenotion.com \"feat: add weekly news\" v0.1.1"
+  echo "Example: ./scripts/release.sh https://scholarnotion.com \"feat: add weekly news\" v0.1.1"
   exit 1
 fi
 

@@ -9,7 +9,7 @@
 ## 目录结构
 
 ```text
-sciencenotion/
+scholarnotion/
   assets/css/styles.css
   data/content-index.json
   pages/*.html
@@ -24,7 +24,7 @@ sciencenotion/
 在项目目录执行：
 
 ```bash
-cd /Users/jasper/Documents/codex/sciencenotion
+cd /Users/jasper/Documents/codex/scholarnotion
 python3 -m http.server 4173
 ```
 
@@ -40,7 +40,7 @@ python3 -m http.server 4173
 - `Build output directory`: `/`（仓库根目录）
 4. 点击 `Save and Deploy`。
 
-无 Token 自动部署方案见：`/Users/jasper/Documents/codex/sciencenotion/DEPLOY_NO_TOKEN.md`
+无 Token 自动部署方案见：`/Users/jasper/Documents/codex/scholarnotion/DEPLOY_NO_TOKEN.md`
 
 ## 绑定你的域名
 
@@ -64,6 +64,6 @@ python3 -m http.server 4173
 ## 日常发布命令
 
 ```bash
-cd /Users/jasper/Documents/codex/sciencenotion
+cd /Users/jasper/Documents/codex/scholarnotion
 ./scripts/release.sh https://你的域名 "feat: 更新内容" v0.1.1
 ```
