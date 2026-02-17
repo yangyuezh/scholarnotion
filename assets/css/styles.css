@@ -81,6 +81,11 @@ a {
   color: #ffffff;
 }
 
+.menu a.is-active {
+  background: #1f4b94;
+  color: #ffffff;
+}
+
 .search-chip {
   border: 1px solid #2e4e88;
   border-radius: 999px;
@@ -88,6 +93,37 @@ a {
   font-size: 13px;
   color: #d9e6ff;
   background: #1a3d78;
+}
+
+.utility-bar {
+  background: #091a38;
+  border-bottom: 1px solid #1f396f;
+  color: #cfddfa;
+}
+
+.utility-inner {
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.utility-badge {
+  border: 1px solid #2e4f8b;
+  border-radius: 999px;
+  padding: 2px 8px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.utility-text {
+  color: #b9cbea;
+}
+
+.utility-link {
+  margin-left: auto;
+  color: #dbe7ff;
 }
 
 .hero {
@@ -137,6 +173,16 @@ a {
 
 .section {
   padding: 16px 0 30px;
+}
+
+.main-surface {
+  margin-top: 22px;
+  margin-bottom: 26px;
+  padding: 24px 22px 10px;
+  border: 1px solid #d3dff2;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 16px 44px rgba(18, 37, 74, 0.08);
 }
 
 .section h2 {
@@ -354,6 +400,45 @@ a {
   font-size: 13px;
 }
 
+.site-footer {
+  border-top: 1px solid #d2deef;
+  background: #f7fafd;
+  margin-top: 14px;
+}
+
+.footer-grid {
+  padding: 24px 0 10px;
+  display: grid;
+  grid-template-columns: minmax(230px, 1.3fr) repeat(2, minmax(130px, 1fr));
+  gap: 16px;
+}
+
+.footer-grid h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #18335f;
+}
+
+.footer-grid p {
+  margin: 0;
+  color: #5f6f89;
+  font-size: 14px;
+}
+
+.footer-grid a {
+  display: block;
+  margin-bottom: 4px;
+  color: #2c4e84;
+  font-size: 14px;
+}
+
+.footer-meta {
+  border-top: 1px solid #d8e3f2;
+  padding: 10px 0 18px;
+  color: #73829b;
+  font-size: 12px;
+}
+
 .topic-hero {
   margin-top: 20px;
   border: 1px solid #c7d8f5;
@@ -528,6 +613,16 @@ a {
     font-size: 12px;
   }
 
+  .utility-inner {
+    min-height: 42px;
+    flex-wrap: wrap;
+    padding: 6px 0;
+  }
+
+  .utility-link {
+    margin-left: 0;
+  }
+
   .topic-hero {
     grid-template-columns: 1fr;
   }
@@ -535,5 +630,9 @@ a {
   .topic-hero-side {
     border-left: none;
     border-top: 1px solid rgba(236, 243, 255, 0.2);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
   }
 }
