@@ -118,6 +118,8 @@ img {
 .top-actions {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 12px;
   text-transform: uppercase;
   font-size: 13px;
@@ -142,6 +144,7 @@ img {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
+  gap: 10px;
   border-top: 1px solid var(--line);
 }
 
@@ -210,6 +213,7 @@ img {
   margin: 0 0 8px;
   font-size: clamp(28px, 2.5vw, 40px);
   line-height: 1.05;
+  text-wrap: balance;
 }
 
 .hero-feature p {
@@ -237,7 +241,7 @@ img {
 
 .story-card h3 {
   margin: 0 12px 6px;
-  font-size: 38px;
+  font-size: clamp(26px, 2.4vw, 38px);
   line-height: 0.97;
 }
 
@@ -291,7 +295,7 @@ img {
 }
 
 .latest-item span {
-  font-size: 24px;
+  font-size: clamp(18px, 1.7vw, 24px);
   line-height: 1;
   font-weight: 700;
 }
@@ -342,7 +346,7 @@ img {
 .section-head h2 {
   margin: 0;
   font-family: "Libre Baskerville", Georgia, serif;
-  font-size: 34px;
+  font-size: clamp(26px, 2vw, 34px);
   line-height: 0.98;
 }
 
@@ -484,6 +488,14 @@ img {
 }
 
 @media (max-width: 1180px) {
+  .container {
+    width: min(1100px, 94%);
+  }
+
+  .brand {
+    font-size: clamp(44px, 5.8vw, 64px);
+  }
+
   .hero-grid {
     grid-template-columns: 1.4fr 1fr;
   }
@@ -508,13 +520,20 @@ img {
     row-gap: 8px;
   }
 
+  .brand {
+    justify-self: start;
+  }
+
   .top-actions {
     grid-column: 1 / -1;
     justify-content: flex-end;
+    gap: 8px;
+    font-size: 11px;
   }
 
   .member-button {
     padding: 7px 9px;
+    font-size: 11px;
   }
 
   .section-nav-wrap {
@@ -529,6 +548,7 @@ img {
 
   .hero-grid {
     grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .cards-3,
@@ -547,5 +567,106 @@ img {
   .story-card h3,
   .latest-column h2 {
     font-size: 28px;
+  }
+
+  .latest-column {
+    order: 2;
+  }
+
+  .hero-side-list {
+    order: 3;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(100%, 95%);
+  }
+
+  .ad-banner-inner {
+    min-height: 110px;
+    padding: 14px;
+  }
+
+  .ad-banner h2 {
+    font-size: 20px;
+  }
+
+  .ad-banner p {
+    font-size: 13px;
+  }
+
+  .top-nav {
+    min-height: 72px;
+    grid-template-columns: 28px 1fr;
+  }
+
+  .brand {
+    font-size: 28px;
+  }
+
+  .menu {
+    gap: 10px;
+  }
+
+  .menu a,
+  .alert-link {
+    font-size: 11px;
+  }
+
+  .hero-feature h1 {
+    font-size: 24px;
+  }
+
+  .hero-feature p {
+    font-size: 15px;
+  }
+
+  .story-card h3 {
+    font-size: 23px;
+  }
+
+  .latest-column h2 {
+    font-size: 24px;
+  }
+
+  .latest-item span {
+    font-size: 16px;
+  }
+
+  .quote-strip blockquote {
+    font-size: 20px;
+  }
+
+  .card h3 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-actions {
+    justify-content: space-between;
+  }
+
+  .icon-btn {
+    font-size: 18px;
+  }
+
+  .member-button {
+    padding: 6px 8px;
+  }
+
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .page-title h1 {
+    font-size: 30px;
+  }
+
+  .section h2 {
+    font-size: 24px;
   }
 }
