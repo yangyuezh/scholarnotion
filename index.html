@@ -3,19 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="ScholarNotion is a science news and data intelligence desk with transparent sources and methods." />
-    <title>ScholarNotion | Science news and data intelligence</title>
+    <meta name="description" content="ScholarNotion is a science intelligence desk for data-backed news, charts, and explainers." />
+    <title>ScholarNotion | Science Intelligence Desk</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
   <body>
-    <div class="top-ad-wrap">
-      <div class="top-ad-label">ADVERTISEMENT</div>
-      <div class="container top-ad">
-        <div>
-          <p class="ad-kicker">ScholarNotion Partner Network</p>
-          <h2>Scientific imaging, open datasets, and research tooling.</h2>
-          <p>Weekly briefs on data infrastructure and evidence methods.</p>
-        </div>
+    <div class="status-bar">
+      <div class="container status-inner">
+        <span class="dot"></span>
+        Updated hourly from approved open sources
+        <a href="/pages/sources.html">Sources & licensing</a>
       </div>
     </div>
 
@@ -25,8 +22,8 @@
         <a class="brand-mark" href="/">ScholarNotion</a>
         <div class="masthead-actions">
           <a href="/pages/charts.html">Search</a>
-          <a href="/pages/insights.html">Log in</a>
-          <a class="member-btn" href="/pages/methodology.html">Become a member</a>
+          <a href="/pages/insights.html">Sign in</a>
+          <a class="member-btn" href="/pages/methodology.html">Methodology</a>
         </div>
       </div>
       <div class="subnav-wrap">
@@ -37,73 +34,106 @@
             <a href="/pages/topics.html">Topics</a>
             <a href="/pages/charts.html">Charts</a>
             <a href="/pages/insights.html">Insights</a>
-            <a href="/pages/methodology.html">Methodology</a>
+            <a href="/pages/explorer.html">Explorer</a>
           </nav>
-          <a class="alerts-link" href="/pages/sources.html">Get our e-alerts</a>
+          <a class="alerts-link" href="/pages/ai-news.html">E-alerts</a>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="container lead-grid">
-        <article class="lead-story">
-          <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1600&q=80" alt="Protein structure visualization" />
-          <div class="lead-meta">SCIENCE IMMUNOLOGY | 17 FEB 2026</div>
-          <h1>Protein-folding evidence points to stronger cross-lab reproducibility.</h1>
+      <section class="container hero-grid">
+        <article class="lead-story card-like">
+          <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1600&q=80" alt="Microscope and lab setup" />
+          <div class="story-meta">FEATURED | FEB 17, 2026</div>
+          <h1>How reliable are AI-driven findings across independent labs?</h1>
           <p>
-            New benchmark comparisons show variance narrowing across independent teams and tooling stacks.
+            A comparative read of replication studies, benchmark drift, and reporting quality in high-impact AI papers.
           </p>
+          <a class="story-link" href="/pages/ai-news.html">Read full analysis →</a>
         </article>
 
-        <article class="side-feature">
-          <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=720&q=80" alt="Wildlife close-up" />
-          <div class="side-kicker">SCIENCE | 16 FEB 2026</div>
-          <h2>The structure of elephant whiskers</h2>
-          <p>By editorial desk, with source synthesis and method notes.</p>
-        </article>
-
-        <aside class="latest-news">
+        <aside class="latest-news card-like">
           <h2>Latest News</h2>
           <a class="news-item" href="/pages/ai-news.html">
-            <span>16 FEB 2026</span>
-            <strong>Plant vaccine takes on corn rootworm, a major crop pest</strong>
+            <span>FEB 17</span>
+            <strong>Open model evaluations add stricter reproducibility sections</strong>
           </a>
           <a class="news-item" href="/pages/ai-news.html">
-            <span>15 FEB 2026</span>
-            <strong>Another public institute confirms director transition timeline</strong>
+            <span>FEB 16</span>
+            <strong>Public health datasets publish new transparency requirements</strong>
           </a>
           <a class="news-item" href="/pages/ai-news.html">
-            <span>15 FEB 2026</span>
-            <strong>Scientists in public service warn of data continuity risks</strong>
+            <span>FEB 16</span>
+            <strong>Universities expand compute-sharing agreements for AI research</strong>
           </a>
           <a class="news-item" href="/pages/ai-news.html">
-            <span>14 FEB 2026</span>
-            <strong>AI model cards become mandatory in two new policy frameworks</strong>
+            <span>FEB 15</span>
+            <strong>Policy update: model cards now mandatory in two frameworks</strong>
           </a>
         </aside>
       </section>
 
-      <section class="container lower-grid">
-        <article class="panel">
-          <h3>Data-backed Topics</h3>
-          <p>Explore structured topic hubs with chart evidence and update logs.</p>
-          <a href="/pages/topics.html">Open Topics</a>
-        </article>
-        <article class="panel">
-          <h3>AI News Desk</h3>
-          <p>Hourly aggregation from open-licensed feeds, reviewed before publishing.</p>
-          <a href="/pages/ai-news.html">Open AI News</a>
-        </article>
-        <article class="panel">
-          <h3>Methods & Sources</h3>
-          <p>Every insight links to source notes, definitions, and known limitations.</p>
-          <a href="/pages/methodology.html">Open Methodology</a>
-        </article>
+      <section class="container section-block">
+        <div class="section-head">
+          <h2>AI News Picks</h2>
+          <a href="/pages/ai-news.html">View all</a>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80" alt="Abstract AI visualization" />
+            <div class="news-content">
+              <span class="tag">Models</span>
+              <h3>Benchmark scores rose, but safety variance widened</h3>
+              <p>Cross-lab test suites show stronger capability gains than consistency gains.</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" alt="Satellite earth image" />
+            <div class="news-content">
+              <span class="tag">Policy</span>
+              <h3>AI policy timelines now include post-release audit windows</h3>
+              <p>Regulators are shifting from pre-launch checks to lifecycle oversight.</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1518152006812-edab29b069ac?auto=format&fit=crop&w=1200&q=80" alt="Data center infrastructure" />
+            <div class="news-content">
+              <span class="tag">Infrastructure</span>
+              <h3>Compute supply remains the bottleneck for frontier experiments</h3>
+              <p>Lab collaboration networks are becoming key to reproducible large-scale training.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section-block">
+        <div class="section-head">
+          <h2>Explore By Product</h2>
+        </div>
+        <div class="product-grid">
+          <a class="product-card" href="/pages/topics.html">
+            <h3>Topics</h3>
+            <p>Structured hubs combining definitions, indicators, and evidence maps.</p>
+          </a>
+          <a class="product-card" href="/pages/charts.html">
+            <h3>Charts</h3>
+            <p>Reusable chart pages with source notes, download links, and update logs.</p>
+          </a>
+          <a class="product-card" href="/pages/insights.html">
+            <h3>Insights</h3>
+            <p>Short analytical posts that connect datasets to current scientific developments.</p>
+          </a>
+          <a class="product-card" href="/pages/explorer.html">
+            <h3>Explorer</h3>
+            <p>Filter and compare metrics across regions, sectors, and publication windows.</p>
+          </a>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer-lite">
-      <div class="container">ScholarNotion · Data-first science intelligence.</div>
+      <div class="container">ScholarNotion · Data-first science intelligence on Cloudflare</div>
     </footer>
 
     <script src="/assets/js/app-shell.js"></script>
